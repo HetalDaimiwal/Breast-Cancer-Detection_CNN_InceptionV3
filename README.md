@@ -4,4 +4,5 @@
 3. Upload the images (test images) here training of model
 4. Patients report based on the detection (cancer detected or not , download report option, and send the report to the patients email ) 
 5. LOG OUT (thank you for using)
+
 STATUS: ONGOING
