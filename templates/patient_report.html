@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Report</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Report</h1>
+        <div class="report-details">
+            <p><strong>Prediction Class:</strong> {{ result['class'] }}</p>
+            <p><strong>Accuracy:</strong> {{ result['accuracy'] }}</p>
+            <p><strong>Remark:</strong> {{ result['remark'] }}</p>
+        </div>
+        
+        <h3>Uploaded Image:</h3>
+        <img src="/static/uploads/{{ filename }}" alt="Uploaded Image" style="max-width: 400px; border: 1px solid #ccc;">
+
+        <h3>Report Options:</h3>
+        <p><strong>Download:</strong> You can download the full report as a PDF.</p>
+        <a href="/download" class="btn">Download Report</a>
+
+        <h3>Email Notification:</h3>
+        <p>The report has been sent to the patient's registered email address. Please check the inbox for details.</p>
+
+        <br>
+        <div class="actions">
+            <a href="/upload" class="btn">Try Another Image</a>
+            <a href="/" class="btn">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
